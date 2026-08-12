@@ -1,0 +1,5 @@
+{
+    "baseline_wer": 115.57402277623885,
+    "finetuned_wer": 61.01877500769467,
+    "improvement_abs": 54.55524776854418
+}

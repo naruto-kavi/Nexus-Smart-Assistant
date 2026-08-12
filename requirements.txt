@@ -1,0 +1,48 @@
+# ==============================================================================
+# Nexus Smart Assistant — Requirements
+# Install with: pip install -r requirements.txt
+# ==============================================================================
+
+# ── Core ML / Deep Learning ────────────────────────────────────────────────────
+torch
+torchvision
+torchaudio
+
+# ── Vision (M1 — YOLO Pose) ────────────────────────────────────────────────────
+ultralytics          # YOLOv8 pose model (person detection + keypoints)
+opencv-python        # Camera capture, frame rendering, image ops
+onnxruntime          # Run YOLO/FaceNet as ONNX on CPU (Pi-friendly)
+
+# ── Face Recognition (M2 — FaceNet) ───────────────────────────────────────────
+facenet-pytorch      # InceptionResnetV1 pretrained on VGGFace2
+
+# ── Voice Activity Detection (M3 — VAD CNN) ───────────────────────────────────
+librosa              # Audio loading + mel-spectrogram extraction
+soundfile            # librosa backend for audio I/O
+
+# ── Speech-to-Text (M4 — Whisper) ─────────────────────────────────────────────
+transformers         # WhisperForConditionalGeneration, WhisperProcessor, pipeline
+accelerate           # Required by transformers for efficient model loading
+
+# ── LLM / Chat (M5 — Groq + Ollama) ──────────────────────────────────────────
+requests             # HTTP calls to Groq Cloud API and Ollama local server
+
+# ── Text-to-Speech (M5 — TTS) ─────────────────────────────────────────────────
+edge-tts             # Microsoft Azure neural TTS (online, high quality)
+pyttsx3              # Offline TTS fallback (works without internet)
+
+# ── Audio Input (Microphone) ──────────────────────────────────────────────────
+pyaudio              # Real-time mic recording via PortAudio
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy
+pillow               # PIL image ops (FaceNet preprocessing)
+matplotlib           # Training plots (M1, M3)
+tqdm                 # Progress bars during training
+duckduckgo-search    # Free web search API
+pycaw                # Windows volume control support
+
+
+# ── DISABLED (code commented out — do not install unless re-enabling) ──────────
+# hsemotion          # Emotion recognition — model download was broken (404)
+# mediapipe          # Gesture detection — disabled to reduce CPU load

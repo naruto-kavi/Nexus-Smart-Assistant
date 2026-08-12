@@ -1,0 +1,6 @@
+{
+    "eval_wer": 99.93,
+    "eval_loss": 1.1688,
+    "train_loss": 1.4924,
+    "steps": 50
+}

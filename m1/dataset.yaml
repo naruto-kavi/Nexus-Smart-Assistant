@@ -1,0 +1,14 @@
+path: data
+train: 
+  - wider_face/images/train
+  - coco_pose/images/train2017
+val: 
+  - wider_face/images/val
+  - coco_pose/images/val2017
+
+# Keypoint shape: [number of keypoints, number of dimensions] (x, y, visibility)
+kpt_shape: [17, 3] 
+
+# Classes
+names:
+  0: person

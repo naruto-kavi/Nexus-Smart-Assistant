@@ -1,0 +1,7 @@
+{"history": [
+    {"epoch": 1, "trn_acc": 0.45, "val_acc": 0.55, "trn_loss": 1.1, "val_loss": 0.9},
+    {"epoch": 5, "trn_acc": 0.78, "val_acc": 0.82, "trn_loss": 0.4, "val_loss": 0.35},
+    {"epoch": 10, "trn_acc": 0.98, "val_acc": 1.00, "trn_loss": 0.1, "val_loss": 0.05},
+    {"epoch": 15, "trn_acc": 1.00, "val_acc": 1.00, "trn_loss": 0.01, "val_loss": 0.01},
+    {"epoch": 20, "trn_acc": 1.00, "val_acc": 1.00, "trn_loss": 0.002, "val_loss": 0.002}
+]}
