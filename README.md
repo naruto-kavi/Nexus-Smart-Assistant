@@ -55,16 +55,6 @@ The project follows a modular architecture where individual AI capabilities are 
 * Tool integration
 * Context-aware conversations
 
-### 🧩 Memory Management
-
-Nexus maintains application-level memory for:
-
-* Conversations
-* Reminders
-* Activity history
-
-Runtime-generated personal data is excluded from version control where appropriate.
-
 ---
 
 ## 🏗️ Architecture
@@ -179,7 +169,7 @@ Nexus/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/BharkaviPM/Nexus-Smart-Assistant.git
+git clone https://github.com/naruto-kavi/Nexus-Smart-Assistant.git
 cd Nexus-Smart-Assistant
 ```
 
@@ -374,24 +364,6 @@ python tests/test_vad_cnn.py
 python tests/test_whisper_lang.py
 python tests/test_yolo_both.py
 ```
-
----
-
-## 🔮 Future Enhancements
-
-Planned improvements can include:
-
-* Real-time multimodal interaction
-* Improved agent/tool orchestration
-* More advanced long-term memory
-* Web and desktop automation
-* Better wake-word detection
-* Streaming speech recognition
-* Improved vision-language reasoning
-* Personal knowledge-base integration
-* UI/dashboard for Nexus
-* Containerized deployment
-* Production monitoring and logging
 
 ---
 

@@ -5,6 +5,13 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
 
 # ============================================================
 # Whisper fine-tuned model
